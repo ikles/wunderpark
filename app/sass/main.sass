@@ -499,21 +499,60 @@ ul
 	text-transform: uppercase	
 
 .slider1
+	width: 100%
 	ul
 		display: block
-		text-align: center
+		text-align: center				
+		position: relative
+		overflow: hidden
 	li
-		display: inline-block
+		display: inline-block		
 		width: 182px
+		min-height: 270px
+		overflow: hidden		
+		margin: 0 10px
+		&:before
+			content: "" 
+			display: block
+			position: absolute
+			left: 0
+			top: 0
+			width: 11px
+			height: 23px
+			background: url("../img/arr-l.png") no-repeat 0 0
+		&:after
+			content: "" 
+			display: block
+			position: absolute
+			right: 0
+			top: 0
+			width: 11px
+			height: 23px
+			background: url("../img/arr-r.png") no-repeat 0 0
 		
 .slider1-img 
 	width: 182px
 	height: 182px
 	overflow: hidden
-	border-radius: 100%
+	border-radius: 100%	
+	font-size: 0
+	margin-bottom: 25px
 	
-.slider1-text
-	min-height: 150px
+.slider1-text	
+	span
+		color: black
+		font-family: FiraSansM
+		font-size: 18px		
+		text-transform: uppercase			
+	.dol
+		margin-top: 8px	
+		height: 55px
+		color: black
+		font-family: Arial
+		font-size: 14px
+		font-weight: 400
+		line-height: 1.2
+		
 
 
 

@@ -595,23 +595,61 @@ ul {
   text-decoration: underline;
   text-transform: uppercase; }
 
-.slider1 ul {
-  display: block;
-  text-align: center; }
-
-.slider1 li {
-  display: inline-block;
-  width: 182px; }
+.slider1 {
+  width: 100%; }
+  .slider1 ul {
+    display: block;
+    text-align: center;
+    position: relative;
+    overflow: hidden; }
+  .slider1 li {
+    display: inline-block;
+    width: 182px;
+    min-height: 270px;
+    overflow: hidden;
+    margin: 0 10px; }
+    .slider1 li:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 11px;
+      height: 23px;
+      background: url("../img/arr-l.png") no-repeat 0 0; }
+    .slider1 li:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 11px;
+      height: 23px;
+      background: url("../img/arr-r.png") no-repeat 0 0; }
 
 .slider1-img {
   width: 182px;
   height: 182px;
   overflow: hidden;
   -webkit-border-radius: 100%;
-          border-radius: 100%; }
+          border-radius: 100%;
+  font-size: 0;
+  margin-bottom: 25px; }
 
-.slider1-text {
-  min-height: 150px; }
+.slider1-text span {
+  color: black;
+  font-family: FiraSansM;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.slider1-text .dol {
+  margin-top: 8px;
+  height: 55px;
+  color: black;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2; }
 
 /*input[type=submit]*/
 /*==========  Desktop First Method  ==========*/
