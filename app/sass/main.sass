@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-weight: inherit
+  font-style: inherit
+  font-size: 100%
+  font-family: inherit
+  vertical-align: baseline
+
+\:focus
+  outline: 0
+
+body
+  line-height: 1
+  color: black
+  background: white
+  font-family: Ubuntu
+
+ol, ul
+  list-style: none
+
+table
+  border-collapse: separate
+  border-spacing: 0
+
+caption, th, td
+  text-align: left
+  font-weight: normal
+
+blockquote
+  &:before, &:after
+    content: ""
+
+q
+  &:before, &:after
+    content: ""
+
+blockquote, q
+  quotes: "" ""
+
+li 
+	list-style: none
+
+ul 
+	padding: 0
+	margin: 0
+
+@import _fonts
+@import _mnu
+
+.main-mnu
+  display: none
+  float: right
+  min-width: 250px
+  text-align: right
+  background-color: #1C242C 
+  width: auto
+  position: absolute
+  top: 55px
+  right: 15px
+  height: auto
+  z-index: 10
+  margin-top: 0
+  ul 
+    display: inline
+  li 
+    display: block
+    float: none
+    margin: 0
+  a 
+    display: block 
+    color: #FFF 
+    border-radius: 0
+    border: none
+    padding: 10px
+    text-align: right
+    &:hover 
+      text-decoration: underline
+        
+  a:hover, li.active a 
+    border: none
+
+.wrapper
+  width: 480px 
+  margin: auto
+  padding-top: 35px
+  overflow: hidden  
+  box-sizing: border-box
+
+.nopadding 
+  padding: 0 !important
+
+.col-mnu 
+  position: relative
+
+.toggle-mnu-wrap
+  position: absolute
+  top: 0
+  right: 0
+
+.logo
+  display: block
+  margin: auto
+  width: 148px
+  height: 129px
+
+
+.toggle-mnu
+  width: 56px
+  height: 56px
+  border: 2px solid #000
+  border-radius: 100%
+  text-align: center
+  margin: 0
+  padding: 0
+  span
+    margin-top: 25px
+    width: 32px
+    margin-left: 10px
+    height: 3px
+    &:after
+      height: 3px
+    &:before
+      height: 3px
+  
+.toggle-mnu.on span
+  margin-left: 11px;
+  margin-top: 27px
+
+
+/*input[type=submit]*/
+
+
+@import _media
