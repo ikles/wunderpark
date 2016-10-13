@@ -9,6 +9,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: inherit
   vertical-align: baseline
 
+*	
+	box-sizing: border-box
+
 \:focus
   outline: 0
 
@@ -40,6 +43,9 @@ q
 blockquote, q
   quotes: "" ""
 
+button
+	cursor: pointer
+
 li 
 	list-style: none
 
@@ -62,8 +68,7 @@ ul
   height: auto
   z-index: 10
   margin-top: 0
-  padding: 40px 25px  
-  box-sizing: border-box
+  padding: 40px 25px    
   &:after
     content: "" 
     display: block
@@ -143,7 +148,8 @@ ul
   margin: 0
   padding: 0
   margin-top: 7px
-  margin-right: 30px  
+  margin-right: 30px   
+  box-sizing: border-box 
   span
     margin-top: 25px
     width: 32px
@@ -406,25 +412,108 @@ ul
   text-transform: uppercase
   margin-bottom: 10px
 
-
 .educators
   label
     width: 50%
     float: left
-    
+    color: rgb(80, 80, 80)
+    font-family: FiraSansM
+    font-size: 17px
+    line-height: 1.1
+    text-transform: uppercase
+    padding-left: 35px    
+    box-sizing: border-box
+    padding-right: 8px
+    padding-top: 5px
+  h2
+    color: black
+    font-family: FiraSansM
+    font-size: 21px    
+    text-transform: uppercase
+    text-align: center
+    margin: 34px 0 21px 0
+ 
 .educators-controls
   width: 50%
   float: left
+  box-sizing: border-box  
   input
-    width: 100%
+    box-sizing: border-box
+    width: 46px
+    height: 46px
+    background-color: white
+    border: 1px solid lightgrey
+    box-shadow: inset 2.5px 4.3px 5px rgba(0, 0, 0, 0.15)
+    text-align: center
+    float: left
+    margin-right: 10px
+  button    
+    color: rgb(80, 80, 80)
+    font-family: Arial
+    font-size: 14px
+    font-weight: 400
+    width: 125px
+    height: 46px
+    background-color: rgb(255, 184, 26)
+    border: none
+    float: left
+
+.all-quest
+	margin-bottom: 38px
+	overflow: hidden
   
+.our-eductors
+	ul
+		display: block
+		text-align: center
+	li
+		display: inline-block
+		margin: 0 6px
+		line-height: 1.4				
+		&:first-child
+			margin-right: 0
+		&:first-child:before
+			content: ""
+			display: block
+			text-decoration: none
+			width: 1px
+			height: 26px
+			background: url("../img/separ.png") no-repeat 0 0
+			float: right
+			margin-left: 12px		
 
+.eductors-all
+	color: rgb(153, 153, 153)
+	font-family: FiraSansM
+	font-size: 18px
+	text-decoration: underline
+	text-transform: uppercase
+	background: url("../img/all-edu.png") no-repeat left center
+	padding-left: 15px	 
+	
+.eductors-quest
+	color: rgb(87, 159, 197)
+	font-family: FiraSansM
+	font-size: 18px	
+	text-decoration: underline
+	text-transform: uppercase	
 
-
-
-
-
-
+.slider1
+	ul
+		display: block
+		text-align: center
+	li
+		display: inline-block
+		width: 182px
+		
+.slider1-img 
+	width: 182px
+	height: 182px
+	overflow: hidden
+	border-radius: 100%
+	
+.slider1-text
+	min-height: 150px
 
 
 

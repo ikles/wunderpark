@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Главная</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/main.css">
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-<script src="js/jquery-1.12.0.min.js"></script>
-<script src="js/common.js"></script>
+	<meta charset="UTF-8">	
+	<title>Главная</title>	
+	<link rel="stylesheet" href="css/main.css">	
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/common.js"></script>
 </head>
 <body>
 	<div class="wrapper">		
@@ -133,17 +124,50 @@
 		<div class="educators">		
 			<div class="outer">
 				<div class="inner">
-					<div class="educators-text">Выберите программу обучения дляbr вашего ребенка от 3 до 11 лет</div>
+					<div class="educators-text">Выберите программу обучения для<br> вашего ребенка от 3 до 11 лет</div>
 					<form>							
-						<label for="Age">Введите возраст Вашего ребенка:</label>
+						<label for="Age">Введите возраст <br>Вашего ребенка:</label>
 						<div class="educators-controls">
-							<input id="Age" name="age" value="0" type="text">
-							<button type="submit">Подобрать</button>
+							<input id="Age" name="age"  type="text">
+							<button type="submit">подобрать</button>
 						</div>
 					</form>
 				</div>
-			</div>			
-		</div><!--educators-->
-	</div><!--wrapper-->
+			</div><!--outher-->			
+			<div class="our-eductors">
+				<h2>Наши педагоги</h2>
+				<div class="all-quest">
+					<ul>
+						<li><a class="eductors-all" href="#">все педагоги</a></li>
+						<li><a class="eductors-quest" href="#">задать вопрос?</a></li>
+					</ul>
+				</div>	
+			</div><!--our-eductors-->
+			<div class="slider1">
+				<ul>
+					<li>
+						<div class="slider1-img">
+							<img src="img/slider11.jpg" alt="">
+						</div>
+						<div class="slider1-text">
+							<span>Виктория Руденко</span><br>
+							Директор школы
+						</div>
+					</li>
+					<li>
+						<div class="slider1-img">
+							<img src="img/slider12.jpg" alt="">
+						</div>
+						<div class="slider1-text">
+							<span>Кевин Ринта</span> <br>
+							Педагог по международной <br>
+							программе
+						</div>
+					</li>
+				</ul>
+			</div><!--slider1-->
+		</div>
+	</div><!--educators-->
+</div><!--wrapper-->
 </body>
 </html>

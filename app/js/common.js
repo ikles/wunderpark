@@ -5,8 +5,6 @@ $(function() {
 		return false;
 	});
 
-
-
 	$('.about button').click(function () {
 
 		if (!($('.about-text').hasClass('ha'))) {
