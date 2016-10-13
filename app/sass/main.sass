@@ -53,31 +53,41 @@ ul
 .main-mnu
   display: none
   float: right
-  min-width: 250px
+  width: 100%
   text-align: right
-  background-color: #1C242C 
-  width: auto
+  background-color: rgba(0, 46, 71, 0.92) 
   position: absolute
-  top: 55px
-  right: 32px
+  top: 73px
+  right: 0
   height: auto
   z-index: 10
   margin-top: 0
-  ul 
-    display: inline
-  li 
-    display: block
-    float: none
+  padding: 40px 25px
+  overflow: hidden
+  box-sizing: border-box
+  ul       
+  li     
+    width: 50%      
+    float: left    
     margin: 0
+    text-align: left
+    list-style: square inside
+    margin-bottom: 20px
+    color: #8caec0
+    font-size: 25px    
+    
   a 
-    display: block 
+    font-family: Ubuntu
+    font-size: 18px
+    font-weight: 400  
+    text-decoration: underline
     color: #FFF 
     border-radius: 0
-    border: none
-    padding: 10px
-    text-align: right
+    border: none    
+    text-align: left
+    color: rgb(186, 234, 255)
     &:hover 
-      text-decoration: underline
+      color: rgb(255, 204, 153)
         
   a:hover, li.active a 
     border: none
@@ -191,7 +201,17 @@ ul
   top: 174px
   text-align: center
   padding: 25px 15px
-  box-sizing: border-box  
+  box-sizing: border-box
+  &:after
+    position: absolute
+    left: 0
+    top: 0
+    content: ""   
+    display: block
+    width: 332px
+    height: 6px
+    background-color: rgb(255, 184, 26)
+    background-image: linear-gradient(to left, rgb(254, 108, 1) 0%, rgb(241, 237, 51) 100%)
   p
     color: rgb(41, 41, 41)
     font-family: Arial
@@ -211,6 +231,8 @@ ul
   font-family: Arial
   font-size: 14px
   font-weight: 400
+  text-align: center
+  padding-bottom: 25px
   p
     line-height: 2.2
     text-align: center
@@ -221,6 +243,37 @@ ul
     margin-bottom: 25px
     text-align: center
 
+.about-text
+  text-align: center
+  margin-bottom: 20px
+  position: relative
+  overflow: hidden
+  height: 675px
+  &:after
+    content: "" 
+    display: block
+    width: 480px
+    height: 96px
+    bottom: 0
+    left: 0
+    position: absolute
+    background: url("../img/about-bot-bg.png") no-repeat bottom left
+
+.ha
+  height: auto !important
+  &:after
+    background: none !important
+
+.about-text-read-more
+  margin: auto
+  width: 425px
+  height: 39px
+  background-color: rgb(255, 184, 26)
+  color: rgb(37, 37, 37)
+  font-family: Arial
+  font-size: 14px
+  font-weight: 400
+  border: none
 
 
 
