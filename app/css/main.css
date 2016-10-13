@@ -53,6 +53,10 @@ ul {
   font-family: FiraSansM;
   src: url(../fonts/FiraSans-Medium.ttf); }
 
+@font-face {
+  font-family: FiraSans;
+  src: url(../fonts/FiraSans-Regular.ttf); }
+
 .toggle-mnu {
   display: block;
   float: right;
@@ -368,7 +372,8 @@ ul {
     font-family: FiraSansM;
     font-size: 21px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 23px; }
 
 .gb-ru {
   text-align: center;
@@ -382,20 +387,126 @@ ul {
           align-items: center; }
   .gb-ru > div {
     display: inline-block;
-    height: auto; }
+    height: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     .gb-ru > div span {
       color: white;
       font-family: FiraSansM;
       font-size: 16px;
       line-height: 1.3;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-top: 28px;
+      display: block; }
+    .gb-ru > div:first-child img {
+      margin-left: -22px; }
   .gb-ru .plus {
     width: 30px; }
     .gb-ru .plus span {
-      font-size: 43px; }
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 53px;
+      margin-top: 0;
+      font-family: FiraSans; }
+
+.equally {
+  width: 100%;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 20px; }
+  .equally span {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 53px;
+    margin-top: 0;
+    font-family: FiraSans;
+    text-align: center; }
 
 .ru, .gb {
   width: 186px; }
+
+.logo2-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+  -webkit-align-items: top;
+      -ms-flex-align: top;
+          align-items: top; }
+  .logo2-list div {
+    width: 230px; }
+    .logo2-list div:first-child {
+      margin-right: 25px;
+      width: 154px; }
+  .logo2-list li {
+    color: white;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.5; }
+    .logo2-list li:before {
+      position: absolute;
+      left: 0;
+      top: 8px;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #b1b1b1; }
+
+.educators .outer {
+  background: #fff none repeat scroll 0 0;
+  border-color: transparent;
+  -webkit-border-image: -webkit-gradient(linear, left top, right bottom, from(#f1ee34), to(#ff6900)) 1 1 1 1;
+  -webkit-border-image: -webkit-linear-gradient(left top, #f1ee34 0%, #ff6900 100%) 1 1 1 1;
+       -o-border-image: linear-gradient(to right bottom, #f1ee34 0%, #ff6900 100%) 1 1 1 1;
+          border-image: -webkit-gradient(linear, left top, right bottom, from(#f1ee34), to(#ff6900)) 1 1 1 1;
+          border-image: linear-gradient(to right bottom, #f1ee34 0%, #ff6900 100%) 1 1 1 1;
+  border-style: solid;
+  border-width: 5px;
+  -webkit-box-shadow: 0 -5px 16px 5px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 -5px 16px 5px rgba(0, 0, 0, 0.19);
+  margin: -42px auto 0 auto;
+  padding: 5px 3px;
+  position: relative;
+  width: 409px; }
+
+.educators .inner {
+  background: #fff none repeat scroll 0 0;
+  border-color: transparent;
+  -webkit-border-image: -webkit-gradient(linear, left top, right bottom, from(#f1ee34), to(#ff6900)) 1 1 1 1;
+  -webkit-border-image: -webkit-linear-gradient(left top, #f1ee34 0%, #ff6900 100%) 1 1 1 1;
+       -o-border-image: linear-gradient(to right bottom, #f1ee34 0%, #ff6900 100%) 1 1 1 1;
+          border-image: -webkit-gradient(linear, left top, right bottom, from(#f1ee34), to(#ff6900)) 1 1 1 1;
+          border-image: linear-gradient(to right bottom, #f1ee34 0%, #ff6900 100%) 1 1 1 1;
+  border-style: solid;
+  border-width: 2px;
+  color: #000;
+  height: 153px;
+  padding: 19px 7px;
+  position: relative;
+  width: 100%; }
+
+.educators-text {
+  color: black;
+  font-family: FiraSansM;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+.educators label {
+  width: 50%;
+  float: left; }
+
+.educators-controls {
+  width: 50%;
+  float: left; }
+  .educators-controls input {
+    width: 100%; }
 
 /*input[type=submit]*/
 /*==========  Desktop First Method  ==========*/
