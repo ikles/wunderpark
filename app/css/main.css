@@ -519,7 +519,7 @@ ul {
   padding-right: 8px;
   padding-top: 5px; }
 
-.educators h2 {
+.mobile-content h2 {
   color: black;
   font-family: FiraSansM;
   font-size: 21px;
@@ -746,6 +746,37 @@ ul {
 
 .dreams-name {
   margin-top: 17px; }
+
+.events {
+  padding: 0 25px; }
+
+.events-img {
+  float: left;
+  margin-right: 15px; }
+  .events-img a {
+    display: block;
+    width: 125px;
+    height: 125px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    overflow: hidden; }
+    .events-img a img {
+      border: 4px solid;
+      -webkit-border-image: -webkit-gradient(linear, left top, right bottom, from(#f1ee34), to(#ff6900)) 1 1 1 1;
+      -webkit-border-image: -webkit-linear-gradient(left top, #f1ee34 0%, #ff6900 100%) 1 1 1 1;
+           -o-border-image: linear-gradient(to right bottom, #f1ee34 0%, #ff6900 100%) 1 1 1 1;
+              border-image: -webkit-gradient(linear, left top, right bottom, from(#f1ee34), to(#ff6900)) 1 1 1 1;
+              border-image: linear-gradient(to right bottom, #f1ee34 0%, #ff6900 100%) 1 1 1 1;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      overflow: hidden; }
+
+.events-title {
+  color: #3f3f3f;
+  font-family: FiraSans;
+  font-size: 16px;
+  line-height: 1.2;
+  text-decoration: underline; }
 
 /*input[type=submit]*/
 /*==========  Desktop First Method  ==========*/
