@@ -888,11 +888,15 @@ ul {
   .projects li {
     float: left;
     width: 208px;
-    margin: 0 8px; }
-  .projects a {
+    margin: 0 8px;
+    margin-bottom: 10px; }
+  .projects .proj-link-img {
     position: relative;
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 0; }
+    .projects .proj-link-img img {
+      font-size: 0; }
   .projects .proj-title {
     position: absolute;
     left: 10px;
@@ -918,7 +922,45 @@ ul {
   line-height: 1.5;
   text-decoration: none;
   padding: 15px;
-  text-align: center; }
+  text-align: center;
+  min-height: 180px; }
+
+.cart {
+  position: relative; }
+
+.cart-adress {
+  width: 192px;
+  min-height: 162px;
+  background-color: white;
+  padding: 20px 15px;
+  top: 80px;
+  left: 50px;
+  position: absolute;
+  color: #060606;
+  font-family: FiraSans;
+  font-size: 14px; }
+  .cart-adress b {
+    font-size: 28px;
+    font-family: FiraSansM;
+    line-height: 1; }
+  .cart-adress p {
+    margin-bottom: 10px;
+    line-height: 1.6; }
+    .cart-adress p:last-child {
+      margin-bottom: 0; }
+  .cart-adress .cart-phone {
+    display: block;
+    margin-top: 7px; }
+
+.footer > div {
+  float: left; }
+
+.button-copy {
+  width: 225px; }
+
+.phone-email-links {
+  width: -webkit-calc(100% - 225px);
+  width: calc(100% - 225px); }
 
 /*input[type=submit]*/
 /*==========  Desktop First Method  ==========*/
