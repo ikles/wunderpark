@@ -498,8 +498,20 @@ ul
 	text-decoration: underline
 	text-transform: uppercase	
 
+.separ-hor
+  content: "" 
+  display: block
+  height: 5px
+  width: 100%
+  border-top: 1px solid 
+  border-bottom: 1px solid 
+  border-image: linear-gradient(to right bottom, #f1ee34 0%, #ff6900 100%) 1 1 1 1
+  position: absolute
+  bottom: 0
+  left: 0
+
 .slider1
-	width: 100%
+	width: 100%  
 	ul
 		display: block
 		text-align: center				
@@ -507,28 +519,34 @@ ul
 		overflow: hidden
 	li
 		display: inline-block		
-		width: 182px
-		min-height: 270px
+		width: 182px		
 		overflow: hidden		
 		margin: 0 10px
 		&:before
 			content: "" 
 			display: block
 			position: absolute
-			left: 0
-			top: 0
+			left: 20px
+			top: 82px
 			width: 11px
 			height: 23px
 			background: url("../img/arr-l.png") no-repeat 0 0
+      cursor: pointer
 		&:after
 			content: "" 
 			display: block
 			position: absolute
-			right: 0
-			top: 0
+			right: 20px
+			top: 82px
 			width: 11px
 			height: 23px
 			background: url("../img/arr-r.png") no-repeat 0 0
+      cursor: pointer
+
+.slider1
+  position: relative
+  &:after
+    @extend .separ-hor
 		
 .slider1-img 
 	width: 182px
@@ -553,20 +571,87 @@ ul
 		font-weight: 400
 		line-height: 1.2
 		
+.slider2
+  padding-bottom: 30px
+  .slider1-img
+    width: 182px
+    height: 182px
+    padding: 2px
+    border: 2px solid
+    border-image: linear-gradient(to right bottom, #f1ee34 0%, #ff6900 100%) 1 1 1 1     
+    overflow: hidden    
+    border-radius: 0px 
+  .slider1-text
+    .dol
+      margin-top: 12px
+      height: auto
 
+.outer-img
+  width: 182px
+  height: 182px  
+  border-radius: 5px
+  overflow: hidden
 
+.slider2
+  position: relative
+  &:after
+    @extend .separ-hor
 
+.about.dreams
+  overflow: hidden
+  padding-bottom: 40px
+  h2
+    margin-top: 0
+    line-height: 1.4
 
+.dreams-blocks
+  margin-top: 42px
+  li
+    width: 50%
+    float: left
+    padding: 0 10px
+    margin-bottom: 40px
+    &:nth-last-child(1)
+      margin-bottom: 0
+    &:nth-last-child(2)
+      margin-bottom: 0
+    a
+      font-family: FiraSans
+      font-size: 18px   
+      text-decoration: none
+    &:first-child
+      a
+        color: rgb(51, 172, 196)
+    &:nth-child(2)
+      a
+        color: rgb(246, 104, 144)
+    &:nth-child(3)
+      a
+        color: rgb(250, 105, 0)
+    &:nth-child(4)
+      a
+        color: rgb(102, 153, 0)
+    &:nth-child(5)
+      a
+        color: rgb(255, 78, 80)
+    &:nth-child(6)
+      a
+        color: rgb(255, 153, 0)
+        
+    span      
+      font-family: FiraSans
+      font-size: 18px      
+      line-height: 1.4
+      display: block      
+      text-transform: uppercase
 
+.dreams
+  position: relative
+  &:after
+    @extend .separ-hor
 
-
-
-
-
-
-
-
-
+.dreams-name
+  margin-top: 17px
 
 
 
