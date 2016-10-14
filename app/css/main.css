@@ -483,10 +483,10 @@ ul {
   border-width: 5px;
   -webkit-box-shadow: 0 -5px 16px 5px rgba(0, 0, 0, 0.19);
           box-shadow: 0 -5px 16px 5px rgba(0, 0, 0, 0.19);
-  margin: -42px auto 0 auto;
+  margin: -28px auto 0 auto;
   padding: 5px 3px;
   position: relative;
-  width: 409px; }
+  width: 425px; }
 
 .educators .inner {
   background: #fff none repeat scroll 0 0;
@@ -500,7 +500,7 @@ ul {
   border-width: 2px;
   color: #000;
   height: 153px;
-  padding: 19px 7px;
+  padding: 10px 7px;
   position: relative;
   width: 100%; }
 
@@ -508,24 +508,24 @@ ul {
   color: black;
   font-family: FiraSansM;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 10px; }
+  margin-bottom: 7px; }
 
 .educators label {
-  width: 50%;
+  width: 206px;
   float: left;
   color: #505050;
   font-family: FiraSansM;
   font-size: 17px;
-  line-height: 1.1;
+  line-height: 1.4;
   text-transform: uppercase;
-  padding-left: 35px;
+  padding-left: 46px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-right: 8px;
-  padding-top: 5px; }
+  padding-top: 3px; }
 
 h2 {
   color: #000;
@@ -536,7 +536,7 @@ h2 {
   margin: 34px 0 21px 0; }
 
 .educators-controls {
-  width: 50%;
+  width: 182px;
   float: left;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -587,6 +587,9 @@ h2 {
     float: right;
     margin-left: 12px; }
 
+.our-eductors h2 {
+  margin-bottom: 15px; }
+
 .eductors-all {
   color: #999999;
   font-family: FiraSansM;
@@ -630,7 +633,7 @@ h2 {
     display: inline-block;
     width: 182px;
     overflow: hidden;
-    margin: 0 10px; }
+    margin: 0 8px; }
     .slider1 li:before {
       content: "";
       display: block;
@@ -662,7 +665,7 @@ h2 {
   -webkit-border-radius: 100%;
           border-radius: 100%;
   font-size: 0;
-  margin-bottom: 25px; }
+  margin-bottom: 24px; }
 
 .slider1-text span {
   color: black;
@@ -671,13 +674,17 @@ h2 {
   text-transform: uppercase; }
 
 .slider1-text .dol {
-  margin-top: 8px;
-  height: 55px;
+  margin-top: 6px;
+  height: 58px;
   color: black;
   font-family: Arial;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2; }
+
+.dop-obr h2 {
+  margin-top: 29px;
+  margin-bottom: 31px; }
 
 .slider2 {
   padding-bottom: 30px; }
@@ -693,9 +700,10 @@ h2 {
             border-image: linear-gradient(to right bottom, #f1ee34 0%, #ff6900 100%) 1 1 1 1;
     overflow: hidden;
     -webkit-border-radius: 0px;
-            border-radius: 0px; }
+            border-radius: 0px;
+    margin-bottom: 27px; }
   .slider2 .slider1-text .dol {
-    margin-top: 12px;
+    margin-top: 15px;
     height: auto; }
 
 .outer-img {
