@@ -182,8 +182,7 @@ ul {
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid #000;
-  padding-bottom: 10px; }
+  outline: 1px solid #000; }
 
 .nopadding {
   padding: 0 !important; }
@@ -748,7 +747,13 @@ ul {
   margin-top: 17px; }
 
 .events {
-  padding: 0 25px; }
+  padding: 0 25px;
+  padding-bottom: 40px; }
+  .events li {
+    margin-bottom: 15px;
+    overflow: hidden; }
+    .events li:last-child {
+      margin-bottom: 0; }
 
 .events-img {
   float: left;
@@ -775,8 +780,111 @@ ul {
   color: #3f3f3f;
   font-family: FiraSans;
   font-size: 16px;
-  line-height: 1.2;
-  text-decoration: underline; }
+  line-height: 1.5;
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #9f9f9f; }
+  .events-title:hover {
+    border-bottom: none; }
+
+.events-desc {
+  margin-top: 12px;
+  color: #858484;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.5; }
+
+.events-date, .reviews-date {
+  color: #858484;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin-top: 10px;
+  text-align: center; }
+
+.reviews {
+  display: table;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fe903f), to(#f2ed41));
+  background-image: -webkit-linear-gradient(bottom, #fe903f 0%, #f2ed41 100%);
+  background-image: linear-gradient(to top, #fe903f 0%, #f2ed41 100%);
+  overflow: hidden;
+  padding: 35px 15px 25px 25px; }
+  .reviews li {
+    display: table-row;
+    margin-bottom: 20px; }
+    .reviews li > div {
+      padding-bottom: 20px; }
+    .reviews li:last-child > div {
+      padding-bottom: 0; }
+  .reviews h2 {
+    margin-top: 0;
+    margin-bottom: 30px; }
+
+.reviews-img {
+  float: left;
+  padding-right: 15px;
+  display: table-cell;
+  vertical-align: top; }
+
+.reviews-text {
+  display: table-cell;
+  vertical-align: top; }
+
+.reviews-title {
+  border-bottom: none;
+  color: #121212;
+  font-family: FiraSansM;
+  font-size: 21px;
+  text-transform: none;
+  margin-bottom: 15px; }
+
+.reviews-desc {
+  color: #1d1d1d;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.5; }
+
+.reviews-date {
+  text-align: left; }
+
+.view-other {
+  display: block;
+  padding: 20px 0;
+  background-color: #f4e141;
+  color: #121212;
+  font-family: FiraSansM;
+  font-size: 21px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1;
+  text-align: center; }
+  .view-other span {
+    height: 28px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.55;
+    display: inline-block;
+    position: relative;
+    border-bottom: 2px solid;
+    padding-bottom: 0; }
+    .view-other span:hover {
+      border-bottom: none; }
+    .view-other span:after {
+      content: "";
+      display: block;
+      background: url("../img/view-other.png") no-repeat 0 0;
+      height: 33px;
+      width: 33px;
+      position: absolute;
+      left: -40px;
+      top: 0; }
+
+.projects {
+  padding: 35px 25px 15px 25px;
+  overflow: hidden; }
+  .projects h2 {
+    margin-top: 0; }
 
 /*input[type=submit]*/
 /*==========  Desktop First Method  ==========*/
