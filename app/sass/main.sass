@@ -308,6 +308,7 @@ ul
     text-transform: uppercase
     text-align: center
     margin-bottom: 23px
+    margin-top: 0 !important
 
 .gb-ru 
   text-align: center
@@ -425,14 +426,14 @@ ul
     padding-right: 8px
     padding-top: 5px
 
-.mobile-content
-  h2
-    color: black
-    font-family: FiraSansM
-    font-size: 21px    
-    text-transform: uppercase
-    text-align: center
-    margin: 34px 0 21px 0
+
+h2
+  color: #000
+  font-family: FiraSansM
+  font-size: 21px    
+  text-transform: uppercase
+  text-align: center
+  margin: 34px 0 21px 0
  
 .educators-controls
   width: 50%
@@ -858,16 +859,62 @@ ul
     margin-top: 7px
   
 .footer
+  padding: 25px 23px 15px 23px
+  overflow: hidden
   > div
     float: left  
 
+.foot-button
+  height: 50px
+  background-color: rgb(255, 184, 26)
+  color: rgb(41, 41, 41)
+  font-family: Arial
+  font-size: 16px  
+  padding: 0 25px
+  border: none
+  margin-bottom: 18px
+
+.copy
+  color: rgb(158, 158, 158)
+  font-family: Arial
+  font-size: 12px  
+  line-height: 1.2
+
 .button-copy
-  width: 225px
+  width: 220px
 
 .phone-email-links
-  width: calc(100% - 225px) 
+  width: calc(100% - 220px) 
 
+.foot-phone
+  color: rgb(0, 46, 71)
+  font-family: Ubuntu
+  font-size: 25px 
+  letter-spacing: 0px  
+  margin-bottom: 18px
 
+.foot-mail, .foot-links, .foot-mail a, .foot-links a
+  font-family: Arial
+  font-size: 15px
+  font-weight: 400
+  line-height: 30px
+  color: rgb(41, 41, 41)
+  text-decoration: none
+
+.foot-links
+  a
+    text-decoration: underline
+  li
+    float: left
+    &:after
+      content: "|" 
+      color: rgb(195, 194, 194)
+      font-family: Arial
+      font-size: 16px
+      margin: 0 8px
+      
+    &:last-child:after
+      display: none
 
 
 
