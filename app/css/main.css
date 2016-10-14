@@ -136,7 +136,7 @@ ul {
   height: auto;
   z-index: 10;
   margin-top: 0;
-  padding: 40px 25px; }
+  padding: 30px 25px; }
   .main-mnu:after {
     content: "";
     display: block;
@@ -154,7 +154,7 @@ ul {
     margin: 0;
     text-align: left;
     list-style: square inside;
-    margin-bottom: 13px;
+    margin-bottom: 11px;
     color: #8caec0;
     font-size: 25px; }
     .main-mnu li:nth-child(odd) {
@@ -182,11 +182,7 @@ ul {
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid #000;
-  background: url("../img/wrap2.jpg") no-repeat 0 0; }
-
-.mobile-content {
-  opacity: 0.7; }
+  outline: 1px solid #ccc; }
 
 .nopadding {
   padding: 0 !important; }
@@ -634,26 +630,28 @@ h2 {
     width: 182px;
     overflow: hidden;
     margin: 0 8px; }
-    .slider1 li:before {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 20px;
-      top: 82px;
-      width: 11px;
-      height: 23px;
-      background: url("../img/arr-l.png") no-repeat 0 0;
-        background-cursor: pointer; }
-    .slider1 li:after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 20px;
-      top: 82px;
-      width: 11px;
-      height: 23px;
-      background: url("../img/arr-r.png") no-repeat 0 0;
-        background-cursor: pointer; }
+
+.arr-l {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 82px;
+  width: 11px;
+  height: 23px;
+  background: url("../img/arr-l.png") no-repeat 0 0;
+    background-cursor: pointer; }
+
+.arr-r {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 82px;
+  width: 11px;
+  height: 23px;
+  background: url("../img/arr-r.png") no-repeat 0 0;
+    background-cursor: pointer; }
 
 .slider1 {
   position: relative; }
@@ -687,7 +685,7 @@ h2 {
   margin-bottom: 31px; }
 
 .slider2 {
-  padding-bottom: 30px; }
+  padding-bottom: 32px; }
   .slider2 .slider1-img {
     width: 182px;
     height: 182px;
@@ -718,18 +716,21 @@ h2 {
 
 .about.dreams {
   overflow: hidden;
-  padding-bottom: 40px; }
+  padding-bottom: 44px;
+  padding-top: 27px; }
   .about.dreams h2 {
     margin-top: 0;
-    line-height: 1.4; }
+    line-height: 1.4;
+    margin-bottom: 10px; }
 
 .dreams-blocks {
-  margin-top: 42px; }
+  margin-top: 34px;
+  overflow: hidden; }
   .dreams-blocks li {
     width: 50%;
     float: left;
     padding: 0 10px;
-    margin-bottom: 40px; }
+    margin-bottom: 32px; }
     .dreams-blocks li:nth-last-child(1) {
       margin-bottom: 0; }
     .dreams-blocks li:nth-last-child(2) {
@@ -761,13 +762,16 @@ h2 {
   position: relative; }
 
 .dreams-name {
-  margin-top: 17px; }
+  margin-top: 6px; }
 
 .events {
+  overflow: hidden;
   padding: 0 25px;
   padding-bottom: 40px; }
+  .events h2 {
+    margin-top: 28px; }
   .events li {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
     overflow: hidden; }
     .events li:last-child {
       margin-bottom: 0; }
@@ -809,7 +813,7 @@ h2 {
   color: #858484;
   font-family: Arial;
   font-size: 14px;
-  line-height: 1.5; }
+  line-height: 1.7; }
 
 .events-date, .reviews-date {
   color: #858484;
@@ -817,7 +821,7 @@ h2 {
   font-size: 14px;
   font-weight: 400;
   display: block;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center; }
 
 .reviews {
@@ -826,12 +830,12 @@ h2 {
   background-image: -webkit-linear-gradient(bottom, #fe903f 0%, #f2ed41 100%);
   background-image: linear-gradient(to top, #fe903f 0%, #f2ed41 100%);
   overflow: hidden;
-  padding: 35px 15px 25px 25px; }
+  padding: 38px 15px 16px 22px; }
   .reviews li {
     display: table-row;
     margin-bottom: 20px; }
     .reviews li > div {
-      padding-bottom: 20px; }
+      padding-bottom: 11px; }
     .reviews li:last-child > div {
       padding-bottom: 0; }
   .reviews h2 {
@@ -854,13 +858,13 @@ h2 {
   font-family: FiraSansM;
   font-size: 21px;
   text-transform: none;
-  margin-bottom: 15px; }
+  margin-bottom: 13px; }
 
 .reviews-desc {
   color: #1d1d1d;
   font-family: Arial;
   font-size: 14px;
-  line-height: 1.5; }
+  line-height: 1.6; }
 
 .reviews-date {
   text-align: left; }
@@ -898,10 +902,11 @@ h2 {
       top: 0; }
 
 .projects {
-  padding: 35px 16px 15px 16px;
+  padding: 37px 16px 3px 16px;
   overflow: hidden; }
   .projects h2 {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 32px; }
   .projects li {
     float: left;
     width: 208px;
@@ -916,8 +921,8 @@ h2 {
       font-size: 0; }
   .projects .proj-title {
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 11px;
+    top: 11px;
     display: inline-block;
     z-index: 10;
     color: #060606;
@@ -936,11 +941,11 @@ h2 {
   color: #212121;
   font-family: Arial;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.7;
   text-decoration: none;
-  padding: 15px;
+  padding: 8px 15px 5px 15px;
   text-align: center;
-  min-height: 180px; }
+  min-height: 155px; }
 
 .cart {
   position: relative; }
@@ -949,8 +954,8 @@ h2 {
   width: 192px;
   min-height: 162px;
   background-color: white;
-  padding: 20px 15px;
-  top: 80px;
+  padding: 17px 15px 10px 15px;
+  top: 81px;
   left: 50px;
   position: absolute;
   color: #060606;
@@ -961,16 +966,16 @@ h2 {
     font-family: FiraSansM;
     line-height: 1; }
   .cart-adress p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     line-height: 1.6; }
     .cart-adress p:last-child {
       margin-bottom: 0; }
   .cart-adress .cart-phone {
     display: block;
-    margin-top: 7px; }
+    margin-top: 10px; }
 
 .footer {
-  padding: 25px 23px 15px 23px;
+  padding: 20px 23px 15px 23px;
   overflow: hidden; }
   .footer > div {
     float: left; }
@@ -981,9 +986,9 @@ h2 {
   color: #292929;
   font-family: Arial;
   font-size: 16px;
-  padding: 0 25px;
+  padding: 0 20px;
   border: none;
-  margin-bottom: 18px; }
+  margin-bottom: 15px; }
 
 .copy {
   color: #9e9e9e;
@@ -992,7 +997,7 @@ h2 {
   line-height: 1.2; }
 
 .button-copy {
-  width: 220px; }
+  width: 206px; }
 
 .phone-email-links {
   width: -webkit-calc(100% - 220px);
@@ -1003,7 +1008,7 @@ h2 {
   font-family: Ubuntu;
   font-size: 25px;
   letter-spacing: 0px;
-  margin-bottom: 18px; }
+  margin-bottom: 15px; }
 
 .foot-mail, .foot-links, .foot-mail a, .foot-links a {
   font-family: Arial;
